@@ -60,7 +60,7 @@ const HeroSection = () => {
           </div>
 
           {/* Right Side Description */}
-          <div className="absolute right-6 md:right-12 top-[38%] md:top-[42%] z-20 max-w-[200px] md:max-w-[260px] text-right">
+          <div className="absolute right-6 md:right-12 bottom-[18%] md:bottom-[22%] z-20 max-w-[200px] md:max-w-[260px] text-right">
             <p className="text-foreground/70 text-xs md:text-sm leading-relaxed italic font-light">
               Be part of the transformation electric vehicles 
               via partnership for the provision of Filling 
