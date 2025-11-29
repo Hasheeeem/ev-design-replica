@@ -70,7 +70,7 @@
   .hero-card {
     background: linear-gradient(
       180deg,
-      hsl(0 0% 78%) 0%,
+      hsl(0 0% 76%) 0%,
       hsl(0 0% 72%) 100%
     );
     border-radius: var(--radius);
