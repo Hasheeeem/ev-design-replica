@@ -75,7 +75,7 @@ const HeroSection = () => {
           <svg width="180" height="45" viewBox="0 0 180 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path 
               d="M0 45V0H55C55 0 65 0 75 20C85 40 90 42 90 42C90 42 95 40 105 20C115 0 125 0 125 0H180V45H0Z" 
-              fill="hsl(0, 0%, 58%)"
+              fill="white"
             />
           </svg>
         </div>
