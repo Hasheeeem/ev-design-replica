@@ -75,9 +75,9 @@
   .hero-bg {
     background: linear-gradient(
       135deg,
-      hsl(140 10% 72%) 0%,
-      hsl(140 8% 68%) 50%,
-      hsl(145 12% 65%) 100%
+      hsl(140 12% 62%) 0%,
+      hsl(140 10% 58%) 50%,
+      hsl(145 14% 55%) 100%
     );
   }
 
@@ -95,8 +95,9 @@
   }
 
   .italic-heading {
-    @apply font-playfair italic text-foreground/95;
+    @apply font-inter font-light tracking-widest uppercase text-foreground/95;
     text-shadow: 0 2px 20px hsl(0 0% 0% / 0.1);
+    letter-spacing: 0.3em;
   }
 
   .bottom-notch {
