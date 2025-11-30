@@ -67,13 +67,12 @@
     background-clip: text;
   }
 
-  .hero-card {
+  .hero-bg {
     background: linear-gradient(
       180deg,
       hsl(0 0% 76%) 0%,
       hsl(0 0% 72%) 100%
     );
-    border-radius: var(--radius);
   }
 
   .nav-link {
