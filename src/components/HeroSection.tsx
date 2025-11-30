@@ -4,6 +4,10 @@ const HeroSection = () => {
   return (
     <section className="hero-bg relative w-full min-h-screen overflow-hidden">
       
+      {/* Animated gradient orbs for depth */}
+      <div className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] bg-gradient-to-br from-ev-green/20 to-transparent rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-[-20%] left-[-10%] w-[500px] h-[500px] bg-gradient-to-tr from-ev-green/15 to-transparent rounded-full blur-3xl" />
+      
       {/* Navbar */}
       <nav className="absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-5">
         <div className="flex items-center">
@@ -18,8 +22,8 @@ const HeroSection = () => {
       </nav>
 
       {/* Background CHARGING Text */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden">
-        <h1 className="gradient-text text-[20vw] md:text-[18vw] font-bold tracking-tight leading-none whitespace-nowrap">
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden" style={{ top: '-8%' }}>
+        <h1 className="gradient-text text-[22vw] md:text-[20vw] font-black tracking-tighter leading-none whitespace-nowrap">
           CHARGING
         </h1>
       </div>
@@ -28,42 +32,33 @@ const HeroSection = () => {
       <div className="relative z-10 h-screen">
         
         {/* Fast and Secure Text - Left Side */}
-        <div className="absolute left-6 md:left-12 top-[32%] z-20">
-          <p className="italic-heading text-xl md:text-3xl">Fast and Secure</p>
+        <div className="absolute left-6 md:left-12 top-[22%] z-20">
+          <p className="italic-heading text-xl md:text-3xl lg:text-4xl">Fast and Secure</p>
+          <div className="mt-3 h-0.5 w-16 bg-gradient-to-r from-ev-green to-transparent" />
         </div>
 
         {/* Center Image Area */}
-        <div className="absolute inset-0 flex items-center justify-center pt-16">
+        <div className="absolute inset-0 flex items-center justify-center pt-8">
           <img 
             src="/images/charger.png" 
-            alt="SK Signet EV Charging Station" 
-            className="max-h-[90%] max-w-full object-contain"
+            alt="Electric Vehicle Charging Station" 
+            className="max-h-[85vh] w-auto object-contain drop-shadow-2xl scale-110 md:scale-125"
           />
         </div>
 
-        {/* SK Signet Label */}
-        <div className="absolute left-[8%] md:left-[30%] bottom-[18%] md:bottom-[22%] z-20">
-          <div className="flex items-center gap-2">
-            <div className="w-1.5 h-1.5 rounded-full bg-foreground/70"></div>
-            <div className="w-12 md:w-16 h-px bg-foreground/40 rotate-[-25deg] origin-left"></div>
-          </div>
-          <div className="mt-3">
-            <h3 className="text-foreground font-semibold text-base md:text-lg">SK Signet</h3>
-            <p className="text-foreground/50 text-[9px] md:text-[10px] mt-1 leading-relaxed max-w-[140px]">
-              Output Power: 60DC+22/42KW<br/>
-              120DC+22/42KW 360DC+22/42KW<br/>
-              Outlet: Double/Triple-outlet
-            </p>
-          </div>
-        </div>
-
         {/* Right Side Description */}
-        <div className="absolute right-6 md:right-12 bottom-[18%] md:bottom-[22%] z-20 max-w-[200px] md:max-w-[260px] text-right">
-          <p className="text-foreground/70 text-xs md:text-sm leading-relaxed italic font-light">
+        <div className="absolute right-6 md:right-12 bottom-[15%] md:bottom-[18%] z-20 max-w-[200px] md:max-w-[280px] text-right">
+          <p className="text-foreground/80 text-xs md:text-sm leading-relaxed font-light">
             Be part of the transformation electric vehicles 
             via partnership for the provision of Filling 
             Stations Public Electric Vehicles
           </p>
+          <div className="mt-4 flex justify-end">
+            <button className="group flex items-center gap-2 text-xs md:text-sm font-medium text-foreground/90 hover:text-ev-green transition-colors duration-300">
+              Learn More 
+              <span className="inline-block transform group-hover:translate-x-1 transition-transform duration-300">→</span>
+            </button>
+          </div>
         </div>
 
       </div>
