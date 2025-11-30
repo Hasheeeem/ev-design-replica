@@ -22,7 +22,7 @@ const HeroSection = () => {
       </nav>
 
       {/* Background CHARGING Text */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden" style={{ top: '-8%' }}>
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden" style={{ top: '-18%' }}>
         <h1 className="gradient-text text-[22vw] md:text-[20vw] font-black tracking-tighter leading-none whitespace-nowrap">
           CHARGING
         </h1>
@@ -32,7 +32,7 @@ const HeroSection = () => {
       <div className="relative z-10 h-screen">
         
         {/* Fast and Secure Text - Left Side */}
-        <div className="absolute left-6 md:left-12 top-[22%] z-20">
+        <div className="absolute left-6 md:left-12 top-[15%] z-20">
           <p className="italic-heading text-xl md:text-3xl lg:text-4xl">Fast and Secure</p>
           <div className="mt-3 h-0.5 w-16 bg-gradient-to-r from-ev-green to-transparent" />
         </div>
@@ -63,14 +63,26 @@ const HeroSection = () => {
 
       </div>
 
-      {/* Bottom Notch/Curve */}
+      {/* Bottom Notch/Curve - Modern Design */}
       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-30">
-        <svg width="180" height="45" viewBox="0 0 180 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="280" height="70" viewBox="0 0 280 70" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path 
-            d="M0 45V0H55C55 0 65 0 75 20C85 40 90 42 90 42C90 42 95 40 105 20C115 0 125 0 125 0H180V45H0Z" 
+            d="M0 70V0H100C100 0 115 0 130 35C145 70 140 70 140 70C140 70 135 70 150 35C165 0 180 0 180 0H280V70H0Z" 
             fill="white"
           />
+          {/* Inner accent line */}
+          <path 
+            d="M110 8C110 8 125 8 138 38C142 47 140 50 140 50C140 50 138 47 142 38C155 8 170 8 170 8" 
+            stroke="hsl(142 70% 45%)"
+            strokeWidth="2"
+            fill="none"
+            opacity="0.6"
+          />
         </svg>
+        {/* Scroll indicator */}
+        <div className="absolute top-4 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1">
+          <div className="w-1 h-3 bg-ev-green/60 rounded-full animate-bounce" />
+        </div>
       </div>
 
     </section>
