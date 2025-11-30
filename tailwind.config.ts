@@ -55,6 +55,8 @@ export default {
           "gray-light": "hsl(var(--ev-gray-light))",
           "gray-medium": "hsl(var(--ev-gray-medium))",
           "gray-dark": "hsl(var(--ev-gray-dark))",
+          "green": "hsl(var(--ev-green))",
+          "green-light": "hsl(var(--ev-green-light))",
           "text-white": "hsl(var(--ev-text-white))",
           "text-muted": "hsl(var(--ev-text-muted))",
         },
